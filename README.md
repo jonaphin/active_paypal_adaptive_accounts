@@ -99,7 +99,7 @@ xml request, raw json response and the URL of the endpoint.
 
 (The MIT License)
 
-Copyright 2011 Jonathan Lancar. MIT Licence, so go for it.
+Copyright 2013 Jonathan Lancar. MIT Licence, so go for it.
 
 Permission is hereby granted, free of charge, to any person obtaining a
 copy of this software and associated documentation files (the
