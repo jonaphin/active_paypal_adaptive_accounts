@@ -40,10 +40,6 @@ Add the following line to your app's Gemfile:
     )
 ```
 
-See the implementation of ActiveMerchant::Billing::PaypalAdaptivePayment#build_adaptive_set_payment_options_request
-for all available options and [Operation SetPaymentOptions API](https://cms.paypal.com/cms_content/US/en_US/files/developer/PP_AdaptivePayments.pdf)
-for a description of them.
-
 ## Testing
 
 First modify the `test/fixtures.yml` to fit your app credentials (You
