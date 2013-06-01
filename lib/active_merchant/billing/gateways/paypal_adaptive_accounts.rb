@@ -9,7 +9,7 @@ module ActiveMerchant
 
     class PaypalAdaptiveAccounts < Gateway
       TEST_URL = 'https://svcs.sandbox.paypal.com/AdaptiveAccounts/'
-      LIVE_URL = 'https://svcs.paypal.com/AdaptiveAccounts'
+      LIVE_URL = 'https://svcs.paypal.com/AdaptiveAccounts/'
 
       self.supported_countries = ['US']
       self.homepage_url = 'http://x.com/'
