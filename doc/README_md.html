@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>README - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+<div id="table-of-contents">
+  <nav class="section">
+    <h3 class="section-header">Table of Contents</h3>
+    <ul>
+      <li><a href="#label-Active+PayPal+Adaptive+Accounts">Active PayPal Adaptive Accounts</a>
+      <li><a href="#label-Supported">Supported</a>
+      <li><a href="#label-Installation">Installation</a>
+      <li><a href="#label-Init">Init</a>
+      <li><a href="#label-Paypal+Account+Status+Verification">Paypal Account Status Verification</a>
+      <li><a href="#label-Testing">Testing</a>
+      <li><a href="#label-Debugging">Debugging</a>
+      <li><a href="#label-TODO">TODO</a>
+      <li><a href="#label-Contributors">Contributors</a>
+      <li><a href="#label-This+Gem+is+heavily+based+on+the+work+of%3A">This Gem is heavily based on the work of:</a>
+      <li><a href="#label-Other+previous+contributors+where+some+code+was+taken+from.">Other previous contributors where some code was taken from.</a>
+      <li><a href="#label-Note+on+Patches%2FPull+Requests%3A">Note on Patches/Pull Requests:</a>
+      <li><a href="#label-Copyright%3A">Copyright:</a>
+    </ul>
+  </nav>
+</div>
+
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./CHANGELOG_md.html">CHANGELOG</a>
+  
+    <li class="file"><a href="./Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="./MIT-LICENSE.html">MIT-LICENSE</a>
+  
+    <li class="file"><a href="./README_md.html">README</a>
+  
+    <li class="file"><a href="./Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="./active_paypal_adaptive_accounts_gemspec.html">active_paypal_adaptive_accounts.gemspec</a>
+  
+    <li class="file"><a href="./doc/created_rid.html">created.rid</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./ActiveMerchant.html">ActiveMerchant</a>
+  
+    <li><a href="./ActiveMerchant/Billing.html">ActiveMerchant::Billing</a>
+  
+    <li><a href="./ActiveMerchant/Billing/AdaptiveAccountsResponse.html">ActiveMerchant::Billing::AdaptiveAccountsResponse</a>
+  
+    <li><a href="./ActiveMerchant/Billing/PaypalAdaptiveAccounts.html">ActiveMerchant::Billing::PaypalAdaptiveAccounts</a>
+  
+    <li><a href="./Hashie.html">Hashie</a>
+  
+    <li><a href="./Hashie/Rash.html">Hashie::Rash</a>
+  
+    <li><a href="./MiniTest.html">MiniTest</a>
+  
+    <li><a href="./MiniTest/Unit.html">MiniTest::Unit</a>
+  
+    <li><a href="./MiniTest/Unit/TestCase.html">MiniTest::Unit::TestCase</a>
+  
+    <li><a href="./PaypalAdaptiveAccountsApiError.html">PaypalAdaptiveAccountsApiError</a>
+  
+    <li><a href="./TestPaypalAdaptiveAccounts.html">TestPaypalAdaptiveAccounts</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<h1 id="label-Active+PayPal+Adaptive+Accounts">Active PayPal Adaptive Accounts<span><a href="#label-Active+PayPal+Adaptive+Accounts">&para;</a> <a href="#documentation">&uarr;</a></span></h1>
+
+<p>This library is meant to interface with PayPal&#39;s Adaptive Payment
+Gateway.</p>
+
+<p>See the <a
+href="https://www.paypalobjects.com/webstatic/en_US/developer/docs/pdf/pp_adaptiveaccounts.pdf">Active
+PayPal Adaptive Accounts</a> manual.</p>
+
+<h2 id="label-Supported">Supported<span><a href="#label-Supported">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Get Verified Status API</p>
+</li></ul>
+
+<h2 id="label-Installation">Installation<span><a href="#label-Installation">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Add the following line to your app&#39;s Gemfile:</p>
+
+<pre>gem &quot;active_paypal_adaptive_accounts&quot;
+
+bundle install</pre>
+
+<h3 id="label-Init">Init<span><a href="#label-Init">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<pre class="ruby"><span class="ruby-identifier">gateway</span> =  <span class="ruby-constant">ActiveMerchant</span><span class="ruby-operator">::</span><span class="ruby-constant">Billing</span><span class="ruby-operator">::</span><span class="ruby-constant">PaypalAdaptiveAccounts</span>.<span class="ruby-identifier">new</span>(
+      <span class="ruby-identifier">login</span><span class="ruby-operator">:</span> <span class="ruby-string">&quot;acutio_1313133342_biz_api1.gmail.com&quot;</span>,
+      <span class="ruby-identifier">password</span><span class="ruby-operator">:</span> <span class="ruby-string">&quot;1255043567&quot;</span>,
+      <span class="ruby-identifier">signature</span><span class="ruby-operator">:</span> <span class="ruby-string">&quot;Abg0gYcQlsdkls2HDJkKtA-p6pqhA1k-KTYE0Gcy1diujFio4io5Vqjf&quot;</span>,
+      <span class="ruby-identifier">appid</span><span class="ruby-operator">:</span> <span class="ruby-string">&quot;APP-80W284485P519543T&quot;</span>
+    )
+</pre>
+
+<h3 id="label-Paypal+Account+Status+Verification">Paypal Account Status Verification<span><a href="#label-Paypal+Account+Status+Verification">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<pre class="ruby"><span class="ruby-identifier">response</span> = <span class="ruby-identifier">gateway</span>.<span class="ruby-identifier">get_verified_status</span> (
+      <span class="ruby-identifier">email</span><span class="ruby-operator">:</span> <span class="ruby-string">&quot;Seller Email Address&quot;</span>,
+      <span class="ruby-identifier">account</span><span class="ruby-operator">:</span> {
+        <span class="ruby-identifier">email</span><span class="ruby-operator">:</span> <span class="ruby-string">&quot;Seller Email&quot;</span>,
+        <span class="ruby-identifier">phone</span><span class="ruby-operator">:</span> <span class="ruby-string">&quot;Seller Phone Number&quot;</span>,
+        <span class="ruby-identifier">id</span><span class="ruby-operator">:</span> <span class="ruby-string">&quot;Seller Paypal ID&quot;</span>
+      }
+    )
+</pre>
+
+<p>See the implementation of
+ActiveMerchant::Billing::PaypalAdaptivePayment#build_adaptive_set_payment_options_request
+for all available options and <a
+href="https://cms.paypal.com/cms_content/US/en_US/files/developer/PP_AdaptivePayments.pdf">Operation
+SetPaymentOptions API</a> for a description of them.</p>
+
+<h2 id="label-Testing">Testing<span><a href="#label-Testing">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>First modify the <code>test/fixtures.yml</code> to fit your app credentials
+(You will need at least a PayPal developer account).</p>
+
+<p>After that you can run them like this:</p>
+
+<pre>$ ruby -Ilib test/test_paypal_adaptive_accounts.rb</pre>
+
+<h2 id="label-Debugging">Debugging<span><a href="#label-Debugging">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Use either gateway.debug or response.debug this gives you the json
+response, the xml sent and the url it was posted to.</p>
+
+<p>From the Rails console it can be accessed like such:</p>
+
+<pre>ActiveMerchant::Billing::PaypalAdaptiveAccounts</pre>
+
+<p><code>PaypalAdaptiveAccounts#debug</code> or
+<code>AdaptiveAccountsResponse#debug</code> return the raw xml request, raw
+json response and the URL of the endpoint.</p>
+
+<h2 id="label-TODO">TODO<span><a href="#label-TODO">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Documentation.</p>
+</li><li>
+<p>Implementing Other Features of AdaptiveAccounts</p>
+</li></ul>
+
+<h2 id="label-Contributors">Contributors<span><a href="#label-Contributors">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Jonathan Lancar (<a href="http://www.genesx.com">www.genesx.com</a>/)</p>
+</li></ul>
+
+<h2 id="label-This+Gem+is+heavily+based+on+the+work+of%3A">This Gem is heavily based on the work of:<span><a href="#label-This+Gem+is+heavily+based+on+the+work+of%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p><a href="http://jpablobr.com/">Jose Pablo Barrantes</a></p>
+</li><li>
+<p><a
+href="https://github.com/jpablobr/active_paypal_adaptive_payment">active_paypal_adaptive_payment</a></p>
+</li></ul>
+
+<h2 id="label-Other+previous+contributors+where+some+code+was+taken+from.">Other previous contributors where some code was taken from.<span><a href="#label-Other+previous+contributors+where+some+code+was+taken+from.">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p><a href="http://tommy.chheng.com">Tommy Chheng</a></p>
+</li><li>
+<p><a
+href="http://tommy.chheng.com/2009/12/29/paypal-adaptive-ruby-gem-released/">Paypal
+Adaptive Ruby Gem Released</a></p>
+</li><li>
+<p><a href="https://github.com/tc/paypal_adaptive">paypal_adaptive</a></p>
+</li><li>
+<p><a href="https://github.com/lamp">lamp (Matt)</a></p>
+</li><li>
+<p><a
+href="https://github.com/lamp/paypal_adaptive_gateway">paypal_adaptive_gateway</a></p>
+</li><li>
+<p><a href="https://github.com/sentientmonkey">sentientmonkey (Scott
+Windsor)</a></p>
+</li><li>
+<p><a
+href="https://github.com/sentientmonkey/active_merchant">active_merchant</a></p>
+</li><li>
+<p><a href="https://github.com/sijokg">sijokg</a></p>
+</li><li>
+<p><a href="https://github.com/sijokg/active_merchant">active_merchant</a></p>
+</li></ul>
+
+<h2 id="label-Note+on+Patches%2FPull+Requests%3A">Note on Patches/Pull Requests:<span><a href="#label-Note+on+Patches%2FPull+Requests%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Fork the project.</p>
+</li><li>
+<p>Make your feature addition or bug fix.</p>
+</li><li>
+<p>Send me a pull request. Bonus points for topic branches.</p>
+</li></ul>
+
+<h2 id="label-Copyright%3A">Copyright:<span><a href="#label-Copyright%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>(The MIT License)</p>
+
+<p>Copyright 2011 Jonathan Lancar. MIT Licence, so go for it.</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the
+&#39;Software&#39;), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, an d/or sell copies of the Software, and to permit
+persons to whom the Software is furnished to do so, subject to the
+following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED &#39;AS IS&#39;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+
