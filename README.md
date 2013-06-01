@@ -1,7 +1,7 @@
 # Active PayPal Adaptive Accounts
 
 This library is meant to interface with PayPal's Adaptive Payment Gateway.
-It enables the verification of a paypal account status.
+It enables the API check for the verified status of a paypal account.
 
 [Active Merchant]:http://www.activemerchant.org
 
