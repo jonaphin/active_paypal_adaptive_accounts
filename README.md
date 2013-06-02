@@ -29,9 +29,9 @@ Add the following line to your app's Gemfile:
     )
 ```
 
-### Paypal Account Status Verification
+### Paypal Account Verified Status Request
 ```ruby
-    response = gateway.get_verified_status (
+    response = gateway.get_verified_status(
       email: "Seller Email Address",
       account: {
         email: "Seller Email",
